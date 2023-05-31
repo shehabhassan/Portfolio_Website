@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+start formating 
+*/
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+/* End Formating  */
+/* Start Edit Page of website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #002349;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+ 
+.logo
+{
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 1.8em;
+text-transform: uppercase;
+}
+
+.navigation a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #957C3D;
+}
+section {
+    padding: 100px 200px;
+}
+/* End sectoin of formating page */
+/* start section of header  */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./images/shehab.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 12px;
+}
+.main h1{
+    color: white;
+    width: 50%;
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main h1 span{
+    display: inline-block;
+    margin-top: 10px;
+    color:  white;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.main h2{
+    color: white;
+    font-size: 1.6em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn {
+    color: #fff;
+    background-color: #002349;
+    text-decoration: none;   
+    font-size: 1.8em;         
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #957C3D;
+    transform : scale(1.2);
+}
+.social-icons{
+    font-size: 4em;
+    padding-right: 20px;
+    transition: 0.7s;
+}
+.social-icons:hover{
+    transform: scale(1.2);
+}
+/* End section of header */
+/* Start Section of Service Page  */
+.title {
+    display: flex;
+    justify-content: center;
+    color: #002349;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+ }
+.card .icon {
+     color:#957C3D;
+     font-size: 8em;
+     text-align: center;
+  }
+.info {
+    text-align: center;
+}
+.info h3 {
+    color: #957C3D;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+/* End  Section of Service Page  */
+
+/* start section of projects  */
+.project {
+    background-color: #000016;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.project .content{
+    margin-top: 30px;
+}
+.project .project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover {
+    transform: scale(1.1);
+ }
+ 
+ .project-card:hover .project-image {
+     opacity: 0.9;
+  }
+ .project-image img{
+     width: 100%;
+ }
+ .project .info { 
+    padding: 1em;
+ }
+.project-category {
+    color: #fff;
+    font-size: 0.8em;
+}
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details {
+   text-decoration: none;
+   color: #002349;
+}
+.more-details:hover {
+    color:#957C3D ;
+}
+ /* end section of projects  */
+
+/* start section of contact  */
+.contacts .content {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .icon{
+  font-size: 4.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+.contacts .info h3 {
+    color: #000;
+}
+
+.contacts .info p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+.contacts .icon:hover{
+    transform: scale(1.2);
+}
+/* end section of contact */
+/*start footer section edit  */
+footer {
+    background-color:  #002349;
+    color: white;
+    padding: 1em;
+    font-size: 1.1em;
+    font-weight: 500;
+    justify-content: space-between;
+    display: flex;
+}
+.footer .footer-title {
+   font-size: 1.1em;
+   font-weight: 600;
+}    
+.footer .footer-title span {
+   color: whitesmoke;
+}
+.social-icon {
+    font-size: 1.5em;
+}
+/*end footer section edit  */
