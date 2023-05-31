@@ -1,2 +1,4 @@
 "# Portfolio_Website" 
-<img src = "https://github.com/shehabhassan/Portfolio_Website/blob/main/1.png" height = "40" width = "40" />
+<br/>
+
+<img src = "https://github.com/shehabhassan/Portfolio_Website/blob/main/1.png" height = "150" width = "150" />
